@@ -75,32 +75,4 @@ function knownCount() {
 
 knownCount();
 
-
-var user_configuration={
-      shape:"circle",
- 
-      initial_size:"12px",
-
-      final_size:"64px",
-
-      expand_speed:"1s",
-
-      fade_delay:"0.5s",
-   
-      fade_duration:"0.5s",
-
-      colors:["hsla(62, 50%,50%, 0.5)","rgba(255,255,255,0.5)","hsla(180, 72%, 52%, 0.5)"],
- 
-      frequency:100,
-
-      density: 1,
-
-      keep_lit:false,
-
-      rotation:true,
- 
-      coverage:1,
-
-      target_class:'.starlight'
-  };
   
