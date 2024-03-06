@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+nav{
+  background-color: #141421a3;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+
+nav a{
+  padding: 1.8vh;
+  background-color: #2e468fd3;
+  text-decoration: none;
+  color: white;
+}
+
+#title{
+  /* background-image: url(Galaxy12.jpg); */
+  color: black;
+  height: 70vh;
+  margin-top: 0;
+  background-size: 200vh;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+#title h1{
+  background-image: url(sun-304807_1280.png);
+  background-size: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#saturn{
+  position: relative;
+  animation: circle 8s infinite linear; 
+}
+#mars{
+  position: relative;
+  animation: circle 10s infinite linear; 
+}
+#earth{
+  position: relative;
+  animation: smallCircle 8s infinite linear; 
+}
+@keyframes smallCircle { 
+  0% { 
+      transform: rotate(0deg)  
+            translateY(100px) rotate(0deg); 
+  } 
+
+  100% { 
+      transform: rotate(360deg)  
+            translateY(100px) rotate(-360deg); 
+  } 
+} 
+@keyframes circle { 
+  0% { 
+      transform: rotate(0deg)  
+            translateY(200px) rotate(0deg); 
+  } 
+
+  100% { 
+      transform: rotate(360deg)  
+            translateY(200px) rotate(-360deg); 
+  } 
+} 
+/* @keyframes move {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:0px; top:0px;}
+  75%  {right:0px; top:0px;}
+  100% {right:200px; top:0px;}
+} */
+body{
+  background-image: url(Galaxy12.jpg);
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  font-size: 1.8vh;
+}
+#spacePeople{
+  color: black;
+  /* background-color: #8a71abd6; */
+  background-color: #58468add;
+  font-size: 2.2vh;
+  margin-top: 12vh;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  float: right;
+  width: 50%;
+  position: relative;
+  animation: moveSide 25s infinite linear; 
+}
+@keyframes moveSide {
+  0%   {right:0px; top:0px;}
+  15%  {right:300px; top:0px;}
+  30%  {right:500px; top:0px;}
+  45%  {right:700px; top:0px;}
+  60%  {right:500px; top:0px;}
+  75%  {right:300px; top:0px;}
+  100% {right:0px; top:0px;}
+}
+#background{
+  /* float: left;
+  width: 50%; */
+  background-image: url(moon-2048727_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: 200vh;
+  height: 80vh;
+}
+#col{
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  clear: both;
+}
+#picture{
+  float: right;
+  width: 50%
+}
+#col2{
+  float:left;
+  width: 50%;
+  background-color: #3b80a896;
+  padding-top: 2vh;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.8vh;
+  padding-bottom: 11vh;
+}
+#col2 img{
+  text-align: left;
+  position: relative;
+  animation: move 18s infinite linear; 
+}
+@keyframes move {
+  0%   {left:0px; top:0px;}
+  20%  {left:300px; top:0px;}
+  40%  {left:300px; top:400px;}
+  60%  {left:-300px; top:400px;}
+  80%  {left:-300px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+#col1{
+  padding-bottom: 70vh;
+  clear: both;
+}
+#knowncount img{
+  width: 5%;
+}
+#col4{
+  background-color: #141421ac;
+  float: right;
+  width: 50%
+}
+#picture2{
+  float: left;
+  width: 50%;
+}
+#col3{
+  padding-bottom: 100vh;
+}
+#solar img{
+  width: 5%;
+}
+#solar{
+  background-color: #141421;
+}
+
