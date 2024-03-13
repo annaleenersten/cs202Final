@@ -4,54 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/path/to/jquery.js"></script>
-    <script src="/path/to/starlight.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="title">
         <nav>
-            <a href="">People in Space</a> &nbsp;&nbsp;
-            <a href="">ISS</a> &nbsp;&nbsp;
-            <a href="">Solar System</a>
+            <div class="container">
+                <a id="sec-1" href="#one">People in Space</a> &nbsp;&nbsp;
+                <a id="sec-2" href="#two">International Space Station</a> &nbsp;&nbsp;
+                <a id="sec-3" href="#three">The Solar System</a>
+            </div>
         </nav>
         <img id="mars" src="cartoon-1298905_1280.png" alt="" width="6%">
-        <img id="earth" src="earth-23593_1280.png" alt="" width="6%">
-        <h1>Space Facts</h1>
+        <img id="neptune" src="neptune-8233219_1280.png" alt="" width="6%">
+        <h1>Learn About  <br> Outer Space!</h1>
         <img id="saturn" src="saturn-148300_1280.png" alt="" width="8%">
+        <img id="moon" src="moon-26619_1280.png" alt="" width="6%">
     </div>
-    
-    <div id="col">
-        <div id="spacePeople">
+
+
+        <div id="col">
+            <div id="one" class="default first item"></div>
+            <div id="numPeopleInSpace"></div>
+            <br>
+            <div id="spacePeople">
+            </div>
+            <div id="background"><img id="rocket" src="rocket-312767_1280.png" alt="" width="10%"></div>
         </div>
-        <div id="background"></div>
     </div>
 
     <br>
 
+    <div id="two" class = "item">
+        <p id="issTitle">The International Space Station is a spacecraft that orbits the earth. Here are the coordinates (latitude and longitude) for where it's at now:</p>  
     <div id="col1">
         <div id="picture"><img src="eat-11114_1280.jpg" alt="" height="485vh"></div>
         <div id="col2">
             <img src="international-space-station-154273_1280.png" alt="" width="12%">
             <h2>International Space Station</h2>
             <div id="iss"></div>
+            <br>
+            <button><a href="https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-the-international-space-station-grades-5-8/">Click to Learn More</a></button>
         </div>
+    </div>
     </div>
     <br>
 
-    <div id="col3">
-        <div id="picture2"><img src="milky-way-67504_1280.jpg" alt="" height="755vh" width="200%"></div>
-        <div id="col4">
-            <h2>The Solar System</h2>
-            <div id="knowncount"></div>
+    
+        <div id="col3">
+            <div id="three" class = "item">
+            <p>How many planets are in our solar system?</p>
+            <div id="id">
+                <br><br>
+                <div id="text">The Solar System is made up of the sun, planets, stars, moons, asteroids, comets, and dwarf planets.</div>
+                <br>
+                <button><a href="https://science.nasa.gov/solar-system/facts/">Click to Learn More</a></button>
+                <br><br><br>
+                <img src="apkf_vz2y_201016_ss4mp_generated.jpg" alt="" width="80%">
+            </div>
+            <div id="col4">
+                <h2>The Solar System</h2>
+                <div id="knowncount"></div>
+            </div>
         </div>
     </div>
 
-    <!-- <div class="starlight"> -->
-        <!-- <h2>Planets, moons, asteroids</h2>
-        <div id="solar"></div> -->
-    <!-- </div> -->
+    <!-- <div id="four" class = "item">
+        <div id="col6">
+            <h2>Planets, moons, asteroids</h2>
+            <div id="solar"></div>
+        </div>
+    </div> -->
+          
+
+    </div>
+      
     
     <script src="script.js"></script>
 

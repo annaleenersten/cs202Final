@@ -6,26 +6,27 @@ nav{
   border-bottom: 2px solid white;
   border-top: 2px solid white;
 }
-
 nav a{
   padding: 1.8vh;
   background-color: #2e468fd3;
   text-decoration: none;
   color: white;
 }
-
 #title{
-  /* background-image: url(Galaxy12.jpg); */
+  background-image: url(space-7307386_1280.png);
+  background-size: 170vh;
+  background-repeat: no-repeat;
+  background-position: center;
   color: black;
   height: 70vh;
-  margin-top: 0;
-  background-size: 200vh;
+  margin-bottom: 5%;
   padding-top: 10vh;
-  padding-bottom: 20vh;
+  padding-bottom: 30vh;
 }
 #title h1{
   background-image: url(sun-304807_1280.png);
   background-size: 50vh;
+  font-size: 3vh;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 10%;
@@ -39,9 +40,19 @@ nav a{
   position: relative;
   animation: circle 10s infinite linear; 
 }
-#earth{
+#neptune{
   position: relative;
   animation: smallCircle 8s infinite linear; 
+}
+#moon{
+  position: relative;
+  animation: smallCircle 10s infinite linear; 
+}
+#rocket{
+  margin-left: 40%;
+  margin-top: 20%;
+  position: relative;
+  animation: Bigcircle 15s infinite linear; 
 }
 @keyframes smallCircle { 
   0% { 
@@ -65,13 +76,17 @@ nav a{
             translateY(200px) rotate(-360deg); 
   } 
 } 
-/* @keyframes move {
-  0%   {left:0px; top:0px;}
-  25%  {left:200px; top:0px;}
-  50%  {left:0px; top:0px;}
-  75%  {right:0px; top:0px;}
-  100% {right:200px; top:0px;}
-} */
+@keyframes Bigcircle { 
+  0% { 
+      transform: rotate(0deg)  
+            translateY(350px) rotate(0deg); 
+  } 
+
+  100% { 
+      transform: rotate(360deg)  
+            translateY(350px) rotate(-360deg); 
+  } 
+} 
 body{
   background-image: url(Galaxy12.jpg);
   color: white;
@@ -79,14 +94,25 @@ body{
   text-align: center;
   font-size: 1.8vh;
 }
+#numPeopleInSpace{
+  background-image: url(astronaut-2025894_1280.png);
+  background-size: 50vh;
+  background-repeat: no-repeat;
+  font-size: 2.7vh;
+  background-color: #141421ca;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  margin-bottom: 1%;
+  box-shadow: 0.5em 0.5em 0.45em rgba(250, 246, 246, 0.664);
+}
 #spacePeople{
-  color: black;
-  /* background-color: #8a71abd6; */
-  background-color: #58468add;
+  /* color: black;
+  background-color: #58468af8; */
+  background-color: #3c0a0d93;
+  color: white;
   font-size: 2.2vh;
-  margin-top: 12vh;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
+  padding-top: 18vh;
+  padding-bottom: 21.5vh;
   float: right;
   width: 50%;
   position: relative;
@@ -102,11 +128,9 @@ body{
   100% {right:0px; top:0px;}
 }
 #background{
-  /* float: left;
-  width: 50%; */
-  background-image: url(moon-2048727_1280.jpg);
+  background-image: url(milky-way-67504_1280.jpg);
   background-repeat: no-repeat;
-  background-size: 200vh;
+  background-size: 190vh;
   height: 80vh;
 }
 #col{
@@ -121,12 +145,11 @@ body{
 #col2{
   float:left;
   width: 50%;
-  background-color: #3b80a896;
-  padding-top: 2vh;
+  background-color: #3b80a8bd;
   color: black;
   font-weight: bolder;
-  font-size: 1.8vh;
-  padding-bottom: 11vh;
+  font-size: 2vh;
+  padding-bottom: 9.7vh;
 }
 #col2 img{
   text-align: left;
@@ -134,36 +157,101 @@ body{
   animation: move 18s infinite linear; 
 }
 @keyframes move {
-  0%   {left:0px; top:0px;}
-  20%  {left:300px; top:0px;}
-  40%  {left:300px; top:400px;}
-  60%  {left:-300px; top:400px;}
-  80%  {left:-300px; top:0px;}
-  100% {left:0px; top:0px;}
+  0%   {left:0px; top:20px;}
+  20%  {left:300px; top:20px;}
+  40%  {left:300px; top:410px;}
+  60%  {left:-300px; top:410px;}
+  80%  {left:-300px; top:20px;}
+  100% {left:0px; top:20px;}
 }
 #col1{
   padding-bottom: 70vh;
   clear: both;
 }
+#col1 p{
+  font-size: 2vh;
+}
+#col4{
+  float: right;
+  width: 40%;
+  background-image: url(stars-2539245_1280.jpg);
+  height: 90vh;
+  font-size: 2vh;
+  font-weight: bold;
+}
 #knowncount img{
   width: 5%;
 }
-#col4{
-  background-color: #141421ac;
-  float: right;
-  width: 50%
-}
+
 #picture2{
   float: left;
   width: 50%;
 }
-#col3{
-  padding-bottom: 100vh;
+#id{
+  background-image: url(stars-2539245_1280.jpg);
+  float: left;
+  width: 60%;
+  height: 90vh;
 }
-#solar img{
-  width: 5%;
+#id button a{
+  text-decoration: none;
+  color: black;
+  font-size: 2vh;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
 }
-#solar{
-  background-color: #141421;
+#id button{
+  background-color: rgb(41, 190, 41);
+  padding: 2vh;
+  border: 0.25vh solid white;
+}
+#id img{
+  box-shadow: 0.5em 0.5em 0.45em rgba(250, 246, 246, 0.664);
+}
+#text{
+  font-size: 2.2vh;
+}
+#col3 p{
+  background-image: url(earth-23593_1280.png);
+  background-repeat: no-repeat;
+  background-size: 80vh;
+  background-position: center;
+  background-color: #1414219b;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  font-size: 2.7vh;
+  box-shadow: 0.5em 0.5em 0.45em rgba(250, 246, 246, 0.664);
+}
+
+#issTitle{
+  background-image: url(ufo-297549_1280.png);
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  font-size: 2.7vh;
+  background-color: #3b80a8aa;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+  color: black;
+  box-shadow: 0.5em 0.5em 0.45em rgba(250, 246, 246, 0.664);
+}
+.column {
+  float: left;
+}
+.left, .right {
+  width: 30%;
+}
+.middle {
+  width: 30%;
+}
+#col2 button{
+  padding: 2vh;
+  background-color: #7f56b8ba;
+  border: 0.25vh solid white;
+}
+#col2 button a{
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
 }
 
