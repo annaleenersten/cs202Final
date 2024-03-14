@@ -35,19 +35,25 @@ function ISS() {
 
 ISS();
 
-// function SolarSystem() {
-//   fetch('https://api.le-systeme-solaire.net/rest/bodies/')
-//   .then(response => response.json())
-//   .then(data => {
-//     let i = 0;
-//     while(data.bodies[i] != null) {
-//       document.getElementById('solar').innerHTML += "Name: " + data.bodies[i].name + " - " + "Type: " + data.bodies[i].bodyType + " - " + "Density: " + data.bodies[i].density + " - " + "Gravity: " + data.bodies[i].gravity + " - " + "Average Temperature: " + data.bodies[i].avgTemp + '<br><br>';
-//       i++;
-//     }
-//   })
-// }
+function SolarSystem() {
+  fetch('https://api.le-systeme-solaire.net/rest/bodies/')
+  .then(response => response.json())
+  .then(data => {
+    let i = 0;
+    while(data.bodies[i] != null) {
+      let img = document.getElementById('solar');
+      let dynamicImage = document.createElement('img');
+      dynamicImage.src = "planet-26617_1280.png";
+      img.appendChild(dynamicImage);
+      document.getElementById('solar').innerHTML += "Name: " + data.bodies[i].englishName + " - " + "Type: " + data.bodies[i].bodyType + '<br>' +  "Discovered by: " + data.bodies[i].discoveredBy + ", " + data.bodies[i].discoveryDate + '<br><br>'
+      
+      // "Density: " + data.bodies[i].density + " - " + "Gravity: " + data.bodies[i].gravity + " - " + "Average Temperature: " + data.bodies[i].avgTemp + '<br><br>';
+      i++;
+    }
+  })
+}
 
-// SolarSystem();
+SolarSystem();
 
 function knownCount() {
   fetch('https://api.le-systeme-solaire.net/rest/knowncount/')
