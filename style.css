@@ -12,6 +12,10 @@ nav a{
   text-decoration: none;
   color: white;
 }
+nav a:hover {
+  background-color: rgba(128, 0, 128, 0.387);
+  color: white;
+}
 #title{
   background-image: url(space-7307386_1280.png);
   background-size: 170vh;
