@@ -18,17 +18,17 @@ function ISS() {
   .then(response => response.json())
   .then(data => {
       document.getElementById('iss').innerHTML =  
-      "ID: " + data.id + '<br>' 
-      + "Latitude: " + data.latitude + '<br>' 
-      + "Longitude: " + data.longitude + '<br>' 
-      + "Altitude: " + data.altitude + '<br>' 
-      + "Velocity: " + data.velocity + '<br>' 
+      // "ID: " + data.id + '<br><br>' +
+      "Latitude: " + data.latitude + '<br><br>' 
+      + "Longitude: " + data.longitude + '<br><br>' 
+      + "Altitude (Height from sea level): " + data.altitude + '<br>' 
+      + "Velocity (speed): " + data.velocity + '<br>' 
       // + "Visibility: " + data.visibility + '<br>' 
       // + "Footprint: " + data.footprint + '<br>' 
       // + "Timestamp: " + data.timestamp + '<br>' 
       + "Day Number: " + data.daynum + '<br>' 
-      + "Solar Latitude: " + data.solar_lat + '<br>'
-      + "Solar Longitude: " + data.solar_lon + '<br>' 
+      // + "Solar Latitude: " + data.solar_lat + '<br>'
+      // + "Solar Longitude: " + data.solar_lon + '<br>' 
       + "Units: "+ data.units + '<br>';   
   })
 }
